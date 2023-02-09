@@ -1,6 +1,6 @@
 # Guide to Spring 5 and Spring Boot 2
 
-This repo tries to collect all the codes and links of the [link](https://github.com/ginny100/The-Complete-Guide-to-Spring-5-and-Spring-Boot-2-Part-1) at one place.
+This repo tries to collect all the codes and links of the [ginny100-The-Complete-Guide-to-Spring-5-and-Spring-Boot-2](https://github.com/ginny100/The-Complete-Guide-to-Spring-5-and-Spring-Boot-2-Part-1) at one place.
 
 ## Table of Contents
 
