@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- define component scan on package lesson11. Include filter will only detect the movie bean -->
+    <context:component-scan base-package="io.datajek.unittesting4" use-default-filters="false">
+        <context:include-filter type="regex" expression="io.datajek.unittesting4.*vie"/>
+    </context:component-scan>
+
+    <!-- enable detection of @Autowired annotation -->
+    <context:annotation-config/>
+
+    <bean id="filter"
+          class="io.datajek.unittesting4.ContentBasedFilter"/>
+
+
+    <bean id="filter2"
+          class="io.datajek.unittesting4.CollaborativeFilter"/>
+
+    <bean id="recommenderImpl" class="io.datajek.unittesting4.RecommenderImplementation"/>
+    <!--        <constructor-arg ref="filter2"/>      -->
+
+</beans>
+
+<!-- This file is used for the purpose of lesson 10 -->
